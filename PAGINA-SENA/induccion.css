@@ -37,3 +37,31 @@ footer {
     color: white;
     text-align: center;
 }
+.slider-container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    overflow-x: scroll;
+    margin-left: 500px;
+}
+
+.slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slider-container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    overflow-x: scroll
+}
+
+.slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-align: center;
+}
