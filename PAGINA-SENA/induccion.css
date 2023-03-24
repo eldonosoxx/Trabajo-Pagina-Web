@@ -1,7 +1,7 @@
 body {
     background-color: white;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #navegador ul {
@@ -61,7 +61,12 @@ footer {
     flex: 0 0 100%;
     width: 100%;
     object-fit: cover;
-
-    /* Vamos a añadir esto 👇 */
     scroll-snap-align: center;
+}
+.final {
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    margin-left: 1650px;
+    margin-top: -25px;
 }
