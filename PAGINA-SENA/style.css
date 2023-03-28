@@ -60,7 +60,7 @@ body{
 
 .header {
     height: 60vh !important;
-    background: url(Index/22.jpeg) no-repeat center;
+    background: url(Index/22.jpeg) no-repeat center; /* https: //caminantesdelretorno.com/destino/san-jose-del-guaviare-verano/*/ 
     background-size: cover; /*cubra toda la imagen*/
 }
 
@@ -159,7 +159,7 @@ p {
 }
 
 .price{
-    background: url(Index/22.jpeg) no-repeat center;
+    background: url(Index/22.jpeg) no-repeat center; /* https: //caminantesdelretorno.com/destino/san-jose-del-guaviare-verano/ */
     background-attachment: fixed; /*Efecto que se queda estatica*/
     background-size: cover; /*para que cubra todo*/
     text-align: center;
