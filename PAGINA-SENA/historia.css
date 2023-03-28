@@ -64,12 +64,8 @@ body{
     background-size: cover; /*cubra toda la imagen*/
 }
 
-#titulo {
-    text-align: center;
-    position: relative;
-    padding-top: 10%;
-}
-h1{
-    font-size: 40px;
-    color: #39a900;
+.video{
+    width: 800px;
+    height: 800px;
+    position: absolute;
 }

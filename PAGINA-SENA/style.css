@@ -1,86 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
 body{
-    background-color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; /*se separen entre ellas arriba*/  
+    height: 63px;
+    background: #171717;
+    position: fixed;
     width: 100%;
+    z-index: 100; /*adelante de cualquier elemento*/
 }
-#navegador ul {
-    list-style-type: none;
-    text-align: center;
-    background-color: #39a900;
-    height: 50px;
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
 }
-#navegador li {
-    display: inline;
-    text-align: center;
-    margin: 0 10px 0 0;
+
+.logo{
+    margin-left: 50px;
 }
-#navegador li a {
-    padding: 2px 7px 2px 7px;
-    color: #ffffff;
-    background-color: #39a900;
+
+.logo a {
     text-decoration: none;
+    color: white;
+    text-transform: uppercase; /*para ponerlo en mayuscula*/
+    font-size: 20px;
 }
-#navegador li a:hover {
-    background-color: #00324D;
-    color: #ffffff;
+
+.navbar a{
+    display: block;
+    padding: 23px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    background: #3f3f3f;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.header {
+    height: 60vh !important;
+    background: url(Index/22.jpeg) no-repeat center;
+    background-size: cover; /*cubra toda la imagen*/
+}
+
+.title{
+    margin-bottom: 40px; /*darle separacion en la parte superior*/
+    font-size: 100px;
+    font-weight: 600; /*grosor*/
+    text-transform: uppercase;
+    color: #39a900;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px; /*10 de arriba-abajo 40 de izquierda-derecha*/
+    border: 2px solid #39a900;
+    color: white;
+    text-decoration: none;
+    background: #39a900;
+    font-size: 25px;
+}
+
+.btn:hover{
+    background: none;
+}
+
+.btn-home{
+    display: flex;
+}
+
+.btn-home a{
+    margin: 0 10px;
+}
+
+.content{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*todo se centre*/
+    align-items: center;
+}
+
+.sau{
+    padding: 30px;
+    background: #1f1d1d;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* cuando estemos en modo telefono se ponga en columna*/
+    text-align: center;
+}
+
+.box-container .box{
+    height: 17rem;
+    width: 30rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5); /*efecto de sombra*/
+    margin: 2rem;
+}
+
+.box-container .box i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background: #39a900;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3{
+    font-size: 20px;
+    color: #39a900;
+}
+
+.box-container .box p{
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about{
+    background: #171717;
+}
+
+.price{
+    background: url(Index/22.jpeg) no-repeat center;
+    background-attachment: fixed; /*Efecto que se queda estatica*/
+    background-size: cover; /*para que cubra todo*/
+    text-align: center;
+}
+
+.contact{
+    padding-top:0; /*espacio en la parte de arriba*/
+    background: #171717;
+    padding-bottom: 0; /*no deje espacio en la parte de abajo*/
+}
+
+@media (max-width: 768px) { /*zoom*/
+    
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau{
+        height: 120vh;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
+.final{
+    font-size: 50px;
 }
 footer {
     background-color: #39a900;
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 40px;
+    height: 22px;
     color: white;
     text-align: center;
-}
-.redes .r1{
-    background-color: #39a900;
-    width: 50px;
-    height: 50px;
-    margin-left: 97%;
-    margin-top: 10%;
-    position: absolute;
-}
-.redes .r2{
-    background-color: #39a900;
-    width: 50px;
-    height: 50px;
-    margin-left: 97%;
-    margin-top: 13%;
-    position: absolute;
-}
-.general .mision-vision{
-    width: 500px;
-    height: 500px;
-    margin-left: 50px;
-}
-.general .historia{
-    width: 500px;
-    height: 500px;
-    margin-top: -530px;
-    margin-left: 600px;
-}
-.general{
-    text-align: center;
-}
-.img1{
-    margin-top: -500px;
-    margin-left: 1100px;
-}
-.tex1{
-    width: 500px;
-    height: 200px;
-    margin-left: 1250px;
-    position: absolute;
-}
-.img2{
-    margin-top: 5px;
-    margin-left: 5px;
-}
-.final{
-    position: absolute;
-    width: 150px;
-    height: 20px;
-    margin-left: 1650px;
-    margin-top: -25px;
+    padding-bottom: 0;
+    font-size: 20px;
 }
